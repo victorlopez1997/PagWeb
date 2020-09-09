@@ -17,6 +17,8 @@ function obtener_valor(){
     if (valor == rta_correcta) {   
         document.getElementById("resultado").innerHTML= ("GANASTE");
         document.getElementById("btn_enviar").disabled = true;
+        document.getElementById("btn_enviar").style.backgroundColor = ("red");
+        document.getElementById("btn_enviar").style.borderColor = ("red")
     }
     
     //intento n2 VALIDO

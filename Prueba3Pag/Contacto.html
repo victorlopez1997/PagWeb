@@ -6,8 +6,7 @@
 	<script src="/JS/bootstrap.min.js"></script>
     <title>Contacto</title>
 </head>
-<body>
-	<!--class="bg-dark"-->
+<body style="background-image: url(/Fondo.jpg); background-attachment: fixed; background-size: cover;">
 
     <!--Barra de navegacion-->
 	<nav class="navbar navbar-expand-sm bg-secondary navbar-dark ">
@@ -21,7 +20,7 @@
 			</li>
 				
 			<li class="nav-item active">
-				<a class="nav-link" href="">Contacto</a>
+				<a class="nav-link" style="color: blue;" href="">Contacto</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/Prueba3Pag/Adivinanza.html">Adivinanza</a>
@@ -29,54 +28,62 @@
 		</ul>
     </nav>
 	
-    <center>
-		<h1>Formulario de Contacto</h1>
+    <div class="row justify-content-center">
+        <h1 style="color:whitesmoke;">CONTACTO</h1>
+        <br><br><br>
+    </div>
 
-        <form action="#" class="was-validated">
+    <div class="row justify-content-center">
+        <table>
+            <tr>
+                <td class="was-validated">
+                    <!--NOMBRE-->
+                    <label for="nombre" style="color:whitesmoke;">Nombre</label>
+                    <!--class="form-control"-->
+                    <input type="text" class="form-control" placeholder="Ingrese su nombre" id="nombre" required>
+                    <div class="valid-feedback">Validado</div>
+                    <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
+                </td>
+                <td class="was-validated">
+                    <!--APELLIDO-->
+                    <label for="apellido" style="color: whitesmoke;">Apellido</label>
+                    <!--class="form-control"-->
+                    <input type="text" class="form-control" placeholder="Ingrese su apellido" id="apellido" required>
+                    <div class="valid-feedback">Validado.</div>
+                    <div class="invalid-feedback" style="float: left;"> Por favor, ingrese su apellido.</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
 
-            <!--NOMBRE-->
-            <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <br>
-                           <!--class="form-control"-->
-                <input type="text" class="form" placeholder="Ingrese su nombre" id="nombre" required>
-                <div class="valid-feedback">Validado</div>
-                <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
-            </div>
-
-            <!--APELLIDO-->
-            <div class="form-group">
-                <label for="apellido">Apellido</label>
-                <br>
-                          <!--class="form-control"-->
-                <input type="text" class="form" placeholder="Ingrese su apellido" id="apellido" required>
-                <div class="valid-feedback">Validado.</div>
-                <div class="invalid-feedback">Por favor, ingrese su apellido.</div>
-            </div>
-
-            <!--EMAIL-->
-            <div class="form-group">
-                <label for="email">Email</label>
-                <br>
-                           <!--class="form-control"-->
-                <input type="email" class="form" placeholder="Ingrese email" id="email" required>
-                <div class="valid-feedback">Validado.</div>
-                <div class="invalid-feedback">Por favor, ingrese su email.</div>
-            </div>
-
+    <div class="row justify-content-center">
+        <table style="width: 32%;">
+            <tr>
+                <td class="was-validated" >
+                    <!--EMAIL-->
+                    <label for="email" style="color: whitesmoke;">Email</label>
+                    <!--class="form-control"-->
+                    <input type="email" class="form-control" style="width: 100%;" placeholder="Ingrese email" id="email" required>
+                    <div class="valid-feedback">Validado.</div>
+                    <div class="invalid-feedback">Por favor, ingrese su email.</div>
+                </td>
+            </tr>
             <!--MENSAJE-->
-            <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <br>
-                <input type="text" class="form-control" placeholder="Escriba un mensaje" name="mensaje" id="mensaje" required>
+            <td class="was-validated">
+                <label for="mensaje" style="color: whitesmoke;">Mensaje</label>
+                <input type="text" class="form-control" style="width:100% ;height: 200px;" placeholder="Escriba un mensaje" name="mensaje" id="mensaje" required>
                 <div class="valid-feedback">Validado.</div>
-                <div class="invalid-feedback">Por favor, ingrese su mensaje.</div>
-			</div>
-			
-			<!--El submit envia el contenido-->
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-	</center>
-	
+                <div class="invalid-feedback">Por favor, Escriba un mensaje.</div>
+            </td>
+        </table>
+    </div>
+    <div class="row justify-content-center">
+        <br>
+        <!--El submit envia el contenido-->
+        <button style=" color: whitesmoke;background-color: green; border-color: green;" type="submit" class="btn-primary" onclick="alert('Completa los campos obligatorios')">Enviar</button>
+    </div>
+    
+    
 </body>
 </html>
