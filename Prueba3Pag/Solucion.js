@@ -35,3 +35,7 @@ function obtener_valor(){
         document.getElementById("btn_enviar").disabled = true;
     }
 }
+
+function reset() {
+    location.reload(true);
+}
